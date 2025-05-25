@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Playfair+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #eee;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2c2c2c;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #660000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #cc4444;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #cc4444;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #eecccc;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+  border-left: 4px solid #cc4444;
+  padding-left: 1rem;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #cc4444;
+  margin-bottom: 0.7rem;
+}
+
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.projeto {
+  background-color: #222;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #660000aa;
+  transition: transform 0.2s ease;
+}
+
+.projeto:hover {
+  transform: scale(1.02);
+}
+
+.projeto-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #eecccc;
+  margin-bottom: 0.3rem;
+}
+
+.projeto-desc {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+section#contato ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section#contato ul li {
+  margin-bottom: 0.5rem;
+}
+
+section#contato a {
+  color: #cc4444;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+section#contato a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #2c2c2c;
+  color: #aa6666;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-top: 2px solid #660000;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
