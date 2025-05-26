@@ -1,53 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio - Akira</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio de Akira</title>
 </head>
+
 <body>
-  <header>
-    <nav class="nav-container">
-      <h1>Akira / The Good Akira</h1>
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="container text-center">
+        <img src="img/avatar-akira.png" alt="Avatar da Akira" class="rounded-circle" width="150" height="150">
+        <p class="lead">Eu sou Akira</p>
+        <h1>Contadora de Histórias e Criadora de Mundos</h1>
+        <p>Sou artista, escritora e amante do místico. Crio universos em forma de contos, campanhas de RPG e projetos visuais que conectam o fantástico à emoção humana. Veja alguns dos projetos que mais amo!</p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">Escrita Criativa</p>
+            <p class="badge bg-secondary">Character Design</p>
+            <p class="badge bg-secondary">Criação de Mundos</p>
+            <p class="badge bg-secondary">Roteirização</p>
+        </div>
+    </header>
 
-  <main>
-    <section id="sobre" class="section">
-      <h2>Sobre Mim</h2>
-      <p>
-        Sou Akira, escritora e criadora de histórias imersas em atmosferas dark academia e gótica, apaixonada por romances trágicos e personagens complexos. Minha arte é uma forma de explorar os mistérios da alma e a beleza da vulnerabilidade.
-      </p>
-    </section>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/my-lady.png" class="card-img-top" alt="Imagem do projeto My Lady">
+                    <div class="card-body">
+                        <h5 class="card-title">Laurent & Émile – Amor em Maré Trágica</h5>
+                        <p class="card-text">Conto LGBT ambientado na França antiga. A história gira em torno de Laurent, um escritor que se apaixona por Émile, um marinheiro. Uma narrativa de amor proibido, perda e memórias eternas.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/akira-shikamuri.png" class="card-img-top" alt="Imagem do projeto Akira Shikamuri">
+                    <div class="card-body">
+                        <h5 class="card-title">My Lady – Romance de Época com Crítica Social</h5>
+                        <p class="card-text">Obra ambientada em uma sociedade dividida por classes rígidas. A protagonista, da Nobreza, enfrenta responsabilidades empresariais herdadas, enquanto o conto expõe desigualdades, dilemas morais e um romance sutil que desafia convenções.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/asa-aurora.png" class="card-img-top" alt="Imagem do projeto Asa Aurora RPG">
+                    <div class="card-body">
+                        <h5 class="card-title">Você é apenas minha! – Romance Dramático</h5>
+                        <p class="card-text">Uma jovem estudante de medicina enfrenta a obsessão de um líder de gangue que a quer só para si, numa trama de paixão, posse e conflitos emocionais intensos.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Explorar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <section id="projetos" class="section">
-      <h2>Projetos</h2>
-      <div id="lista-projetos" class="projetos-container">
-        <!-- Os projetos serão inseridos aqui pelo JS -->
-      </div>
-    </section>
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Laurent & Émile – Amor em Maré Trágica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Laurent é um escritor que vive na França do século XVIII. Após conhecer o misterioso Émile, um marinheiro com olhos melancólicos, ele mergulha em um amor profundo e proibido. Porém, as regras da sociedade e a dor do destino os separam tragicamente. Este conto é uma ode à liberdade de amar, mesmo que o preço seja a perda.</p>
+                    <img src="img/my-lady.png" alt="Cena do conto My Lady">
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ler história completa</a>
+                    <a href="#">Baixar PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section id="contato" class="section">
-      <h2>Contato & Redes</h2>
-      <p>Quer conversar ou conhecer mais? Me encontre nas redes:</p>
-      <ul>
-        <li><a href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://twitter.com/seuusuario" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-        <li><a href="mailto:thegoodakira@gmail.com">Email</a></li>
-      </ul>
-    </section>
-  </main>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="https://github.com/usuaria">GitHub</a>
+            <a href="mailto:contato@akira.art">E-mail</a>
+        </div>
+        <p class="my-5 text-center">© 2025. Criado com magia e café por Akira</p>
+    </footer>
 
-  <footer>
-    &copy; 2025 Akira / The Good Akira. Todos os direitos reservados.
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
