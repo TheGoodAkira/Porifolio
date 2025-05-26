@@ -12,8 +12,8 @@ const projetos = [
     descricao: 'História mística sobre destino, autodescoberta e escuridão, com uma atmosfera etérea e personagens profundos.'
   },
   {
-    titulo: 'Projeto em Andamento',
-    descricao: 'Espaço reservado para um novo projeto em desenvolvimento, que será revelado em breve.'
+    titulo: 'Você é apenas minha! – Romance Dramático',
+    descricao: 'Uma jovem estudante de medicina enfrenta a obsessão de um líder de gangue que a quer só para si, numa trama de paixão, posse e conflitos emocionais intensos.'
   }
 ];
 
