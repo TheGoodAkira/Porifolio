@@ -6,19 +6,21 @@
 
 body {
   margin: 0;
-  background-color: #121212;
-  color: #eee;
+  background-color: #100308; /* preto com toque de vinho muito escuro */
+  color: #f8e9e9; /* quase branco, suave e romântico */
   font-family: 'Cormorant Garamond', serif;
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 header {
-  background-color: #2c2c2c;
-  padding: 1rem 2rem;
-  border-bottom: 2px solid #660000;
+  background-color: #3b0a1a; /* vinho profundo e escuro */
+  padding: 1.2rem 2.5rem;
+  border-bottom: 3px solid #a00020; /* vermelho sangue */
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 8px #6b0f27cc;
 }
 
 .nav-container {
@@ -27,82 +29,105 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 700;
 }
 
 .nav-container h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: #cc4444;
+  font-size: 2.3rem;
+  color: #cc2233;
   margin: 0;
+  text-shadow: 0 0 10px #9f1e2b, 0 0 20px #730017;
+  letter-spacing: 0.05em;
+  user-select: none;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
 }
 
 .nav-links a {
-  color: #cc4444;
+  color: #cc2233;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-weight: 700;
+  transition: color 0.4s ease, text-shadow 0.4s ease;
 }
 
 .nav-links a:hover {
-  color: #eecccc;
+  color: #ff5252;
+  text-shadow: 0 0 8px #ff4646, 0 0 15px #ff1a1a;
 }
 
 main {
   max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
 }
 
 .section {
-  margin-bottom: 3rem;
-  border-left: 4px solid #cc4444;
-  padding-left: 1rem;
+  margin-bottom: 3.5rem;
+  border-left: 6px solid #cc2233;
+  padding-left: 1.5rem;
+  background: #28030c; /* vermelho muito escuro */
+  border-radius: 10px;
+  box-shadow: 0 0 25px #720022cc;
+  transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+  box-shadow: 0 0 40px #cc2233dd;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #cc4444;
-  margin-bottom: 0.7rem;
+  font-size: 2.5rem;
+  color: #cc2233;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px #a00020;
+  letter-spacing: 0.06em;
 }
 
 .projetos-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .projeto {
-  background-color: #222;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 0 5px #660000aa;
-  transition: transform 0.2s ease;
+  background-color: #3d0e1e;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #a50027cc;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .projeto:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #ff3d5a;
 }
 
 .projeto-title {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #eecccc;
-  margin-bottom: 0.3rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #ff5a6e;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #cc2233;
+  letter-spacing: 0.04em;
 }
 
 .projeto-desc {
-  font-size: 1rem;
-  color: #ddd;
+  font-size: 1.1rem;
+  color: #f6d6d6;
+  line-height: 1.5;
+  font-style: italic;
+  text-shadow: 0 0 4px #500011;
 }
 
 section#contato ul {
@@ -111,26 +136,35 @@ section#contato ul {
 }
 
 section#contato ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+  color: #ff8a9b;
+  text-shadow: 0 0 3px #9f2938;
 }
 
 section#contato a {
-  color: #cc4444;
+  color: #cc2233;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 section#contato a:hover {
   text-decoration: underline;
+  color: #ff5968;
+  text-shadow: 0 0 10px #ff3d5a;
 }
 
 footer {
-  background-color: #2c2c2c;
-  color: #aa6666;
+  background-color: #3b0a1a;
+  color: #cc2233;
   text-align: center;
-  padding: 1.5rem 1rem;
-  border-top: 2px solid #660000;
-  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  border-top: 3px solid #a00020;
+  font-size: 1rem;
+  text-shadow: 0 0 5px #720022;
+  letter-spacing: 0.04em;
+  user-select: none;
 }
 
 /* Responsividade */
@@ -138,11 +172,11 @@ footer {
 @media (max-width: 600px) {
   .nav-container {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.3rem;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 1rem;
   }
 }
