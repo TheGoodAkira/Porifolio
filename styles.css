@@ -1,68 +1,200 @@
+/* Fonte principal */
 body {
-  margin: 0; 
-  background: #121212;
-  color: #eee;
-  font-family: 'Cormorant Garamond', serif;
-  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1c1c1c; /* fundo escuro para foco */
+  color: #d9b8b8; /* tom claro com toque quente */
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #660000 0%, #8b1a1a 100%);
+  color: #f5d6d6;
+  box-shadow: 0 8px 20px rgba(139, 26, 26, 0.8);
+  border-radius: 0 0 40px 40px;
   padding: 2rem 1rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  color: #cc4444;
-  font-size: 2.4rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  letter-spacing: 0.06em;
+header p.lead {
+  font-style: italic;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  margin-top: 0.5rem;
 }
 
-section {
-  border-left: 4px solid #cc4444;
-  padding-left: 1rem;
-  margin-bottom: 3rem;
+/* Títulos */
+h1, h2 {
+  font-weight: 700;
+  text-shadow: 1px 1px 5px #4b0000;
 }
 
-.projeto {
-  margin-bottom: 2rem;
-}
-
-.projeto h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: #cc4444;
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.04em;
-}
-
-.projeto p {
-  font-size: 1rem;
-  color: #ddd;
-  margin-top: 0;
-}
-
-footer {
-  text-align: center;
-  color: #aa6666;
-  border-top: 2px solid #660000;
-  padding: 1rem 0;
+/* Badges personalizados */
+.badge.bg-danger {
+  background-color: #8b1a1a;
+  color: #f5d6d6;
+  font-weight: 600;
   font-size: 0.9rem;
-  font-family: 'Cormorant Garamond', serif;
+  margin: 0 0.3rem 0.5rem 0;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  box-shadow: 0 0 8px #660000;
+}
+
+/* Cards */
+.card {
+  background: #3a1f1f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(139, 26, 26, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(139, 26, 26, 0.95);
+}
+
+.card-title {
+  color: #eac6c6;
+  font-weight: 700;
+}
+
+.card-text {
+  color: #d8bcbc;
+  font-size: 0.95rem;
+}
+
+/* Botão "Veja o projeto" */
+.btn-link {
+  color: #e07b7b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #b23a3a;
+  text-decoration: underline;
+}
+
+/* Modal */
+.modal-content {
+  background: #4b2929;
+  color: #f5d6d6;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(139, 26, 26, 0.9);
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: #f7c4c4;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px #610000;
+}
+
+.modal-footer .btn-danger {
+  background-color: #8b1a1a;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 0 10px #660000;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-danger:hover {
+  background-color: #b23737;
+}
+
+.modal-footer .btn-outline-danger {
+  color: #e07b7b;
+  border-color: #e07b7b;
+  font-weight: 600;
+}
+
+.modal-footer .btn-outline-danger:hover {
+  background-color: #8b1a1a;
+  color: #f5d6d6;
+  border-color: #b23737;
+}
+
+/* Rodapé */
+footer {
+  background: linear-gradient(135deg, #660000 0%, #8b1a1a 100%);
+  border-radius: 40px 40px 0 0;
+  color: #f5d6d6;
+  padding: 3rem 1rem;
+  box-shadow: 0 -8px 20px rgba(139, 26, 26, 0.8);
+}
+
+footer h2 {
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 5px #4b0000;
+}
+
+footer a {
+  color: #f7c4c4;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #b23737;
+}
+
+/* Ícones do rodapé */
+footer i {
+  transition: transform 0.3s ease;
+}
+
+footer a:hover i {
+  transform: scale(1.2);
+}
+
+/* Imagens do avatar e projetos */
+img.rounded-circle {
+  border: 4px solid #8b1a1a;
+  box-shadow: 0 0 15px #660000;
+}
+
+/* Imagens dentro dos modais */
+.modal-body img {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(139, 26, 26, 0.9);
+  margin-top: 1rem;
+}
+
+/* Links gerais */
+a {
+  color: #e07b7b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b23737;
+  text-decoration: underline;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3a1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b1a1a;
+  border-radius: 10px;
 }
 
 /* Responsividade */
-
-@media (max-width: 480px) {
-  body {
-    padding: 1rem;
-    max-width: 100%;
-  }
-  h1 {
+@media (max-width: 768px) {
+  header h1 {
     font-size: 1.8rem;
   }
-  .projeto h2 {
-    font-size: 1.4rem;
+
+  .card-text {
+    font-size: 0.9rem;
   }
 }
